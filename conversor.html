@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Studs — max.dev</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="conversor.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a class="logo" href="index.html">max<span>.dev</span></a>
+
+        <nav aria-label="Navegación principal">
+            <a href="index.html#inicio">Inicio</a>
+            <a href="index.html#proyectos">Proyectos</a>
+            <a href="index.html#sobre-mi">Sobre mí</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="eyebrow">PROYECTO 001 · HERRAMIENTA</p>
+            <h1>Roblox Stud <span>Converter.</span></h1>
+            <p class="intro">
+                Convierte studs de Roblox a metros y viceversa.
+                Simple, rápido y sin instalar nada.
+            </p>
+        </section>
+
+        <section class="converter project-card">
+            <div class="project-info">
+                <label for="modo">Dirección de conversión</label>
+                <select id="modo">
+                    <option value="studs">Studs → Metros</option>
+                    <option value="metros">Metros → Studs</option>
+                </select>
+
+                <label for="cantidad" id="etiqueta-cantidad">
+                    Cantidad de studs
+                </label>
+                <input
+                    id="cantidad"
+                    type="number"
+                    min="0"
+                    step="any"
+                    placeholder="Ej. 100"
+                >
+
+                <button class="button" id="convertir" type="button">
+                    Convertir ↗
+                </button>
+
+                <div class="result" aria-live="polite">
+                    <p class="eyebrow">RESULTADO</p>
+                    <output id="resultado">Introduce una cantidad</output>
+                </div>
+            </div>
+        </section>
+
+        <p class="back-link">
+            <a href="index.html#proyectos">← Volver a los proyectos</a>
+        </p>
+    </main>
+
+    <footer>
+        <a class="logo" href="index.html">max<span>.dev</span></a>
+        <p>Hecho con curiosidad y código.</p>
+    </footer>
+
+</body>
+</html>
