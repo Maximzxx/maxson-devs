@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GT7 Copilot: prototipo de copiloto de práctica para Gran Turismo 7, con mapa de Spa y telemetría experimental.">
+    <title>GT7 Copilot — max.dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="index.html">max<span>.dev</span></a>
+        <nav aria-label="Navegación principal">
+            <a href="index.html#proyectos">Proyectos</a>
+            <a href="index.html#sobre-mi">Sobre mí</a>
+        </nav>
+    </header>
+
+    <main class="project-page">
+        <a class="back-link" href="index.html#proyectos">← Volver a proyectos</a>
+
+        <section class="project-hero">
+            <p class="eyebrow">PROYECTO PERSONAL · BUILD DE QA</p>
+            <h1>GT7 <span>Copilot.</span></h1>
+            <p class="project-lead">
+                Un prototipo de copiloto de práctica para Gran Turismo 7.
+                La idea es ayudar a estudiar Spa-Francorchamps con un mapa 2D,
+                indicaciones de conducción y una base para experimentar con telemetría.
+            </p>
+            <div class="project-actions">
+                <a class="button button-primary" href="https://github.com/Maximzxx/GT7_copilot/releases/latest" target="_blank" rel="noopener noreferrer">
+                    Descargar build de QA <span aria-hidden="true">↗</span>
+                </a>
+                <a class="button" href="https://github.com/Maximzxx/GT7_copilot" target="_blank" rel="noopener noreferrer">
+                    Ver código fuente <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+            <p class="fine-print">Por ahora, el paquete disponible es una AppImage para Linux x86_64. La compatibilidad con otros sistemas todavía no está publicada.</p>
+        </section>
+
+        <section class="project-section">
+            <p class="eyebrow">LA IDEA</p>
+            <h2>Aprender la pista, curva a curva.</h2>
+            <p>
+                GT7 Copilot nació de querer convertir las vueltas de práctica en algo más
+                guiado: visualizar el circuito, reconocer sus sectores y consultar indicaciones
+                sin depender de una voz que repita avisos constantemente.
+            </p>
+            <p>
+                El prototipo incluye dos estilos de instructor —simple y tipo copiloto de rally—
+                y está pensado para evolucionar con información de conducción más útil.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <p class="eyebrow">BAJO EL CAPÓ</p>
+            <h2>Herramientas y enfoque</h2>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <span class="feature-index">01</span>
+                    <h3>C++ y Qt Quick / QML</h3>
+                    <p>Interfaz de escritorio con una estética oscura y componentes visuales para el mapa y el instructor.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-index">02</span>
+                    <h3>Mapa de Spa</h3>
+                    <p>Vista 2D del circuito como base para estudiar trazada, sectores e indicaciones.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-index">03</span>
+                    <h3>UDP experimental</h3>
+                    <p>Infraestructura inicial para recibir telemetría y probar comunicación local. La conexión con una consola real aún necesita validación.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-index">04</span>
+                    <h3>Pruebas de QA</h3>
+                    <p>La retroalimentación de otras personas ayudará a encontrar errores y priorizar mejoras antes de ampliar el proyecto.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="project-section qa-section">
+            <p class="eyebrow">PARTICIPA EN EL QA</p>
+            <h2>Prueba el prototipo</h2>
+            <p>Esta es una build temprana. Antes de probarla, ten en cuenta lo siguiente:</p>
+            <ul class="qa-list">
+                <li>Necesitas un PC Linux de 64 bits para usar el paquete publicado actualmente.</li>
+                <li>Para probar el flujo de juego, necesitas Gran Turismo 7 y acceso al circuito de Spa-Francorchamps.</li>
+                <li>Una PS5 es preferible para las pruebas de telemetría real, pero esa conexión todavía no está verificada en todos los entornos.</li>
+                <li>Si no tienes consola a mano, consulta el repositorio para ver las opciones de prueba disponibles; la telemetría simulada es una vía experimental.</li>
+            </ul>
+            <p class="notice"><strong>Importante:</strong> no es una versión final. Algunas funciones pueden estar incompletas y los resultados de telemetría no deben considerarse fiables hasta que se validen.</p>
+            <a class="button button-primary" href="https://github.com/Maximzxx/GT7_copilot/releases/latest" target="_blank" rel="noopener noreferrer">
+                Ir a descargas <span aria-hidden="true">↗</span>
+            </a>
+        </section>
+
+        <section class="project-section feedback-section" id="feedback">
+            <p class="eyebrow">FEEDBACK</p>
+            <h2>Cuéntame cómo te fue.</h2>
+            <p>Reporta errores, comparte qué pudiste probar y sugiere qué debería mejorar. No incluyas contraseñas, direcciones ni información personal en tus respuestas.</p>
+            <div class="form-frame">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScr6v-IrEC3ikQ2Bd7rhN263sicwW2VqA73PS_24F5FibOwGA/viewform?embedded=true"
+                    title="Formulario de feedback de GT7 Copilot"
+                    loading="lazy"
+                    width="640"
+                    height="2557"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0">Cargando…</iframe>
+            </div>
+            <p class="fine-print">Si el formulario no carga, <a class="inline-link" href="https://docs.google.com/forms/d/e/1FAIpQLScr6v-IrEC3ikQ2Bd7rhN263sicwW2VqA73PS_24F5FibOwGA/viewform" target="_blank" rel="noopener noreferrer">ábrelo directamente en Google Forms</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <a class="logo" href="index.html">max<span>.dev</span></a>
+        <p>Hecho con curiosidad y código.</p>
+    </footer>
+</body>
+</html>
